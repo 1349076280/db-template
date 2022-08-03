@@ -1,0 +1,89 @@
+.c-dialog {
+  position: relative;
+  font-size: 16px;
+}
+.showAnimation{
+  animation:fadeInDown 1s;
+}
+.hiddenAnimation{
+  animation:fadeOut 1s;
+}
+.mask {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.dialog {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .c-dialog--false {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+  }
+  .dialogCont {
+    max-width: 100%;
+    width: 85%;
+    background: #fff;
+    border-radius: 0.44em;
+  }
+
+  h1 {
+    display: block;
+    font-size: 1.12em;
+    font-family: 'PingFangSC-Medium';
+    color: #000;
+    margin: 1.5em 0 1.2em;
+    text-align: center;
+  }
+  .dialogCenter {
+    width: 100%;
+    // min-height: 4em;
+    font-size: 1em;
+    font-family: 'PingFangSC-Regular';
+    color: #333333;
+    line-height: 1.3em;
+    margin-bottom: 1.2em;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+  }
+  .dialogBottom{
+    width: 100%;
+    height: 3.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.027em solid #ccc;
+    color: #000;
+    font-size: 0.9em;
+    .line{
+      width: 0.027em;
+      height:3.3em;
+      background: #ccc;
+    }
+    .btn{
+     width: 50%;
+     height: 3.3em;
+     text-align: center;
+     line-height: 3.3em;
+     color: #2F86F6;
+    }
+    .btn:nth-child(3){
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+
+

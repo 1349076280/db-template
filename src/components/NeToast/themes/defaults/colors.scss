@@ -1,0 +1,5 @@
+@each $key,$val in $toast-colors {
+  .c-toast--#{$key} {
+    background-color: $val;
+  }
+}

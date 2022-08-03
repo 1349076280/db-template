@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@import './variables';
+
+@function vw($px) {
+  @return calc($px / $vw_design) * 100vw;
+}
+
+@function rem($px) {
+  @return calc($px / $vw_fontsize) * 1rem;
+}
