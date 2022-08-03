@@ -1,6 +1,6 @@
 import {requestAjaxEngine} from "./Index";
 import {IStaticsItem, ITicketItem, IListRequest, ITicketListResponse, IStaticRequest} from "./types/Coupon";
-
+// 请求接口列表在此处写接口 例如 getAvailableTicketList
 /**
  * 获得可领优惠券列表
  * @param request
@@ -10,20 +10,3 @@ export const getAvailableTicketList = (request: IListRequest) => {
     return requestAjaxEngine.getAjax<ITicketListResponse<ITicketItem>>(request);
 }
 
-/**
- * 获得我的优惠券列表
- * @param request
- */
-export const getMyTicketList = (request: IListRequest) => {
-    request.action = 45210;
-    return requestAjaxEngine.getAjax<ITicketListResponse<ITicketItem>>(request);
-}
-
-/**
- * 查询优惠券数量
- * @param request
- */
-export const getMyTicketStatics = (request: IStaticRequest) => {
-    request.action = 45215;
-    return requestAjaxEngine.getAjax<ITicketListResponse<IStaticsItem>>(request);
-}

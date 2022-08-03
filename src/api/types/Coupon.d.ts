@@ -1,5 +1,7 @@
 import {AjaxEngineRequest} from "../Index";
 
+// 在此处写请求接口参数类型 返回值类型
+
 interface IListRequest extends AjaxEngineRequest{
     /**
      * 手机号
